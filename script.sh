@@ -7,9 +7,9 @@ for i in {1..299}; do
   # ${padded} is then used in the filename to ensure the proper formatting.
 
   printf -v padded "%03d" "$i"  # Format the number with leading zeros
-  echo "object${padded}.mm"
+  # echo "object${padded}.mm"
   # echo "object\"${padded}\".mm"
-  # cp object.mm object${padded}.mm
+  cp object.mm object${padded}.mm
 done
 
 cd ..
