@@ -1,11 +1,15 @@
 #!/bin/bash
 cd context
 
-for i in {1..99}; do
+for i in {1..299}; do
+  # printf -v padded "%03d" "$i" formats the value of $i with leading zeros so that it is always three digits long.
+  # %03d specifies that you want a three-digit number with leading zeros.
+  # ${padded} is then used in the filename to ensure the proper formatting.
+
   printf -v padded "%03d" "$i"  # Format the number with leading zeros
-  echo "object${padded}.mm"
+  # echo "object${padded}.mm"
   # echo "object\"${padded}\".mm"
-  # cp object.mm object${padded}.mm
+  cp object.mm object${padded}.mm
 done
 
 cd ..
@@ -14,6 +18,7 @@ cd ..
 # cp -r context/ .ci/
 # cp -r context/ cache/
 # cp -r context/ ci/
+
 # echo "{\"repository_url\":{" > repository.json
 # index=1
 # for repo in ${REPOS}; do
