@@ -1,7 +1,7 @@
 #!/bin/bash
 cd context
 
-for i in {1..299}; do
+for i in {1..370}; do
   # printf -v padded "%03d" "$i" formats the value of $i with leading zeros so that it is always three digits long.
   # %03d specifies that you want a three-digit number with leading zeros.
   # ${padded} is then used in the filename to ensure the proper formatting.
