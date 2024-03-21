@@ -36,7 +36,7 @@ These services are required to be executed first with so as to prevent errors wh
 - Personally, I prefer to run the microservices individually in the terminal because it allows me to easily monitor errors displayed.
 - Whichever approach you intend to use to start the microservices, make sure the `gateway service` is always the last service you start. All other services should be running before starting the `gateway service`.
 
-## Setting up Jenkins master and agent
+<!-- ## Setting up Jenkins master and agent
 
-- To see how to complete the setup, you can get the complete course on Udemy
+- To see how to complete the setup, you can get the complete course on Udemy -->
 
